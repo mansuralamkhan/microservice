@@ -9,9 +9,9 @@ pipeline {
         AWS_REGION = 'us-east-1'
         AWS_ACCOUNT_ID = '183991395055'
         ECR_REGISTRY = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
-        USER_SERVICE_REPO = "${ECR_REGISTRY}/user-service"
-        PRODUCT_SERVICE_REPO = "${ECR_REGISTRY}/product-service"
-        ORDER_SERVICE_REPO = "${ECR_REGISTRY}/order-service"
+        USER_SERVICE_REPO = "${ECR_REGISTRY}/user_service"
+        PRODUCT_SERVICE_REPO = "${ECR_REGISTRY}/product_service"
+        ORDER_SERVICE_REPO = "${ECR_REGISTRY}/order_service"
     }
 
     stages {
