@@ -34,21 +34,21 @@ pipeline {
                 stage('User Service') {
                     steps {
                         script {
-                            buildAndPushDockerImage('user-service', 'user_service/Dockerfile', USER_SERVICE_REPO)
+                            buildAndPushDockerImage('user-service', 'user_service/', USER_SERVICE_REPO)
                         }
                     }
                 }
                 stage('Product Service') {
                     steps {
                         script {
-                            buildAndPushDockerImage('product-service', 'product_service/Dockerfile', PRODUCT_SERVICE_REPO)
+                            buildAndPushDockerImage('product-service', 'product_service/', PRODUCT_SERVICE_REPO)
                         }
                     }
                 }
                 stage('Order Service') {
                     steps {
                         script {
-                            buildAndPushDockerImage('order-service', 'order_service/Dockerfile', ORDER_SERVICE_REPO)
+                            buildAndPushDockerImage('order-service', 'order_service/', ORDER_SERVICE_REPO)
                         }
                     }
                 }
