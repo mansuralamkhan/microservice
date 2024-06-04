@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your_org/your_microservices_repo.git'
+                git 'https://github.com/mansuralamkhan/microservice.git'
             }
         }
 
