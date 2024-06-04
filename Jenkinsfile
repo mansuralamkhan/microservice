@@ -84,7 +84,7 @@ pipeline {
 
 def buildAndPushDockerImage(serviceName, dockerfilePath, repository) {
     docker.withRegistry("https://${ECR_REGISTRY}") {
-        def image = docker.build("${repository}:${params.VERSION}", "-f ${dockerfilePath} ")
+        def image = docker.build("${repository}:${params.VERSION}", " ${dockerfilePath} ")
         image.push()
         image.push('latest')
     }
